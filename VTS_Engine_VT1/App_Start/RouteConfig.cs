@@ -15,8 +15,8 @@ namespace VTS_Engine_VT1
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{id}",
+                defaults: new { controller = "Main", action = "ReceiveRowData", id = UrlParameter.Optional }
             );
         }
     }
